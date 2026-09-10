@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+
 
 header {
     background-color: #211b2d;
@@ -56,7 +56,6 @@ nav a:hover {
     color: #a78bfa;
 }
 
-/* HERO */
 
 .hero {
     min-height: 550px;
@@ -104,7 +103,7 @@ nav a:hover {
     opacity: 0.35;
 }
 
-/* BOTÓN */
+
 
 .boton {
     display: inline-block;
@@ -125,7 +124,7 @@ nav a:hover {
     background-color: #6d28d9;
 }
 
-/* SECCIONES */
+
 
 .destacados {
     padding: 70px 8%;
@@ -152,7 +151,7 @@ nav a:hover {
     color: #aaa1b5;
 }
 
-/* TARJETAS */
+
 
 .juegos {
     max-width: 1100px;
@@ -228,7 +227,7 @@ nav a:hover {
     color: white;
 }
 
-/* FOOTER */
+
 
 footer {
     background-color: #100d17;
@@ -252,7 +251,7 @@ footer strong {
     color: #c4b5fd;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 800px) {
 
