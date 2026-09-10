@@ -1,20 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #151522;
+    font-family: Arial, sans-serif;
+    background-color: #11111f;
     color: white;
 }
 
 header {
-    background-color: #222238;
+    background-color: #202035;
     padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 nav a:hover {
@@ -22,33 +30,110 @@ nav a:hover {
 }
 
 main {
-    width: 80%;
+    width: 85%;
+    max-width: 1100px;
     margin: auto;
 }
 
 .bienvenida {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
-button {
+.bienvenida h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.bienvenida p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #c5c5d0;
+}
+
+.boton {
+    display: inline-block;
     background-color: #7c4dff;
     color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+}
+
+.boton:hover {
+    background-color: #9b6cff;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo h2 {
+    font-size: 32px;
+}
+
+.titulo p {
+    color: #c5c5d0;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 article {
-    background-color: #222238;
+    background-color: #202035;
     padding: 20px;
-    margin: 15px 0;
     border-radius: 8px;
+    border: 1px solid #30304a;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    color: #c5c5d0;
+}
+
+article:hover {
+    border-color: #7c4dff;
+}
+
+.noticia {
+    margin-bottom: 20px;
+}
+
+.contenido {
+    display: grid;
+    gap: 20px;
 }
 
 footer {
+    background-color: #202035;
     text-align: center;
-    background-color: #222238;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 25px;
+    margin-top: 50px;
+    color: #c5c5d0;
+}
+
+@media (max-width: 700px) {
+
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .bienvenida h2 {
+        font-size: 30px;
+    }
 }
