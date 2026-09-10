@@ -1,139 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #11111f;
+    font-family: 'Poppins', sans-serif;
+    background-color: #171421;
     color: white;
+    line-height: 1.6;
 }
+
+/* HEADER */
 
 header {
-    background-color: #202035;
-    padding: 20px;
-    text-align: center;
+    background-color: #211b2d;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid #8b5cf6;
 }
 
-header h1 {
-    margin: 0 0 15px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    font-size: 28px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: #c4b5fd;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
 }
 
 nav a {
-    color: white;
+    color: #ddd6e8;
     text-decoration: none;
-    margin: 0 10px;
+    font-weight: 500;
 }
 
 nav a:hover {
-    color: #9b6cff;
+    color: #a78bfa;
 }
 
-main {
-    width: 85%;
-    max-width: 1100px;
-    margin: auto;
+/* HERO */
+
+.hero {
+    min-height: 550px;
+
+    padding: 70px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1c1728;
 }
 
-.bienvenida {
-    text-align: center;
-    padding: 80px 20px;
+.hero-contenido {
+    max-width: 650px;
 }
 
-.bienvenida h2 {
-    font-size: 40px;
+.etiqueta {
+    color: #a78bfa;
+    font-size: 14px;
+    font-weight: 600;
+
     margin-bottom: 15px;
 }
 
-.bienvenida p {
-    max-width: 650px;
-    margin: 0 auto 30px;
-    color: #c5c5d0;
+.hero h2 {
+    font-size: 52px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
 }
+
+.hero h2 span {
+    color: #a78bfa;
+    display: block;
+}
+
+.hero-contenido > p:not(.etiqueta) {
+    color: #c5becf;
+    margin-bottom: 25px;
+}
+
+.gato {
+    font-size: 130px;
+    opacity: 0.35;
+}
+
+/* BOTÓN */
 
 .boton {
     display: inline-block;
-    background-color: #7c4dff;
+
+    background-color: #7c3aed;
     color: white;
-    text-decoration: none;
+
     padding: 12px 22px;
-    border-radius: 6px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
 }
 
 .boton:hover {
-    background-color: #9b6cff;
+    background-color: #6d28d9;
 }
 
-section {
-    padding: 40px 0;
+/* SECCIONES */
+
+.destacados {
+    padding: 70px 8%;
+    background-color: #171421;
 }
 
 .titulo {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo p {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .titulo h2 {
     font-size: 32px;
+    margin: 8px 0;
 }
 
-.titulo p {
-    color: #c5c5d0;
+.titulo span {
+    color: #aaa1b5;
 }
 
-.contenedor {
+/* TARJETAS */
+
+.juegos {
+    max-width: 1100px;
+    margin: auto;
+
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
+    gap: 25px;
 }
 
-article {
-    background-color: #202035;
+.card {
+    background-color: #211b2d;
+
+    border: 1px solid #44375c;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.card:hover {
+    border-color: #8b5cf6;
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card-contenido {
     padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #30304a;
 }
 
-article h3 {
-    margin-top: 0;
+.card-contenido small {
+    color: #a78bfa;
+
+    font-size: 11px;
+
+    font-weight: 600;
 }
 
-article p {
-    color: #c5c5d0;
+.card h3 {
+    font-size: 20px;
+
+    margin: 8px 0;
 }
 
-article:hover {
-    border-color: #7c4dff;
+.card p {
+    color: #b8afc2;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
 }
 
-.noticia {
-    margin-bottom: 20px;
+.card a {
+    color: #c4b5fd;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
 }
 
-.contenido {
-    display: grid;
-    gap: 20px;
+.card a:hover {
+    color: white;
 }
+
+/* FOOTER */
 
 footer {
-    background-color: #202035;
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-    color: #c5c5d0;
+    background-color: #100d17;
+
+    padding: 30px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid #44375c;
+
+    color: #91879e;
+
+    font-size: 13px;
 }
 
-@media (max-width: 700px) {
+footer strong {
+    color: #c4b5fd;
+}
 
-    .contenedor {
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-contenido {
+        margin: auto;
+    }
+
+    .gato {
+        display: none;
+    }
+
+    .juegos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .juegos {
         grid-template-columns: 1fr;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    .bienvenida h2 {
-        font-size: 30px;
+    .hero h2 {
+        font-size: 38px;
     }
 }
