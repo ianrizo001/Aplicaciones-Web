@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #151522;
+    color: white;
+}
+
+header {
+    background-color: #222238;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #9b6cff;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+button {
+    background-color: #7c4dff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+article {
+    background-color: #222238;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #222238;
+    padding: 20px;
+    margin-top: 40px;
+}
