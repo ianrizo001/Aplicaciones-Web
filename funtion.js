@@ -1,26 +1,25 @@
-
-// Obtenemos el botón por medio de su ID
-
 let boton = document.getElementById("botonColor");
 
+let colores = [
+    "#8e7cc3",
+    "#7aa7d9",
+    "#7fc8a9",
+    "#d98b8b",
+    "#c59bd1",
+    "#e0b56b",
+    "#6fb8b0",
+    "#d47777"
+];
 
-// Cuando se presione el botón
+let cambio = 0;
 
 boton.addEventListener("click", function() {
 
-    // Obtenemos todos los divs que están dentro del contenedor
-
     let divs = document.querySelectorAll(".contenedor div");
 
-
-    // Recorremos todos los divs
-
-    divs.forEach(function(div) {
-
-        // Cambiamos el color de fondo
-
-        div.style.backgroundColor = "#8e44ad";
-
+    divs.forEach(function(div, i) {
+        div.style.backgroundColor = colores[(i + cambio) % colores.length];
     });
 
-});
+    cambio++;
+}); 
