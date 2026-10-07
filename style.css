@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+
+h1 {
+    margin-bottom: 30px;
+}
+
+
+.contenedor {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+.contenedor div {
+    height: 150px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #6c8cff;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+
+
+.IURZ-div1:hover {
+    background-color: #ff5733;
+    transform: scale(1.05);
+}
+
+.IURZ-div2:hover {
+    background-color: #33c1ff;
+    transform: scale(1.05);
+}
+
+.IURZ-div3:hover {
+    background-color: #33ff57;
+    transform: scale(1.05);
+}
+
+.IURZ-div4:hover {
+    background-color: #ff33a8;
+    transform: scale(1.05);
+}
+
+.IURZ-div5:hover {
+    background-color: #a833ff;
+    transform: scale(1.05);
+}
+
+.IURZ-div6:hover {
+    background-color: #ffc133;
+    transform: scale(1.05);
+}
+
+.IURZ-div7:hover {
+    background-color: #33ffe0;
+    transform: scale(1.05);
+}
+
+.IURZ-div8:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+
+
+button {
+    margin-top: 30px;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #333;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+}
+
